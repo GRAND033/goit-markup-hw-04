@@ -92,7 +92,6 @@ img {
 }
 
 .header-nav-link {
-    
     display: flex;
     
     font-weight: 500;
@@ -116,8 +115,11 @@ img {
     list-style-type: none;
 }
 
-.header-item {
+.header-item:not(:first-child) {
     margin-left: 50px;
+}
+
+    .header-item {
     list-style: none;
     font-weight: 500;
     font-size: 14px;
@@ -126,21 +128,20 @@ img {
 
     color: var(--header-item)
 }
-.icon-list {
+
+.header-icon {
+    margin-left: 30px;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
     
 }
-.mail-icon {
-    width: 16px;
-    height: 12px;
+.header-icon:hover
+.header-icon:focus {
+    fill:#2196F3;
 }
-.mail-icon:hover {
-    fill: #2196F3;
-}
-.tel-icon {
-    margin-left: 30px;
-    width: 10px;
-    height: 16px;
-}
+
 
 .header-link {
     padding: 32px 0;
@@ -187,7 +188,14 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     background: var(--hero-background-color);
-    background-image: url(../images/Hero\ back\ \(New\).jpg);
+    background-image: linear-gradient( 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url(../images/Hero\ back\ \(New\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
     
 }
 
@@ -342,7 +350,7 @@ img {
 .comand-list {
     display: flex;
     margin-left: -30px;
-    margin-top: -50px;
+    
 
     
 }
@@ -350,7 +358,7 @@ img {
 .comand-item {
     flex-basis: calc((100% - 30px) / 4);
     margin-left: 30px;
-    margin-top: 50px;
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--background-heder);
@@ -375,8 +383,45 @@ img {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    
     color: var(--secondary-text-color)
+}
+
+.comand-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.comand-soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.comand-soc-item:last-child {
+    margin-right: 0;
+}
+
+.comand-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.comand-soc-link:hover, .comand-soc-link:focus {
+    background-color: #2196F3;
+    fill: #AFB1B8;
+}
+.comand-soc-link:hover .comand-soc-icon,
+.comand-soc-link:focus .comand-soc-icon {
+    fill:#AFB1B8;
+}
+
+.comand-soc-icon {
+    fill: #FFFFFF;
 }
     
     
