@@ -19,6 +19,7 @@
 --primary-text-color: #212121;
 --secondary-text-color: #757575;
 --button-begr-color: #2196F3;
+--clients-primary-color: #AFB1B8;
 
 }
 
@@ -302,7 +303,8 @@ img {
     height: 120px;
     padding: 25px 100px;
     justify-content: center;
-    display: flex;
+    display:inline-flex;
+    align-items: center;
     background: #F5F4FA;
     border-radius: 4px;
 }
@@ -350,9 +352,6 @@ img {
 .comand-list {
     display: flex;
     margin-left: -30px;
-    
-
-    
 }
 
 .comand-item {
@@ -395,6 +394,7 @@ img {
     width: 44px;
     height: 44px;
     margin-right: 10px;
+    margin-bottom: 30px;
 }
 .comand-soc-item:last-child {
     margin-right: 0;
@@ -404,10 +404,11 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #AFB1B8;
     display:flex;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -417,13 +418,55 @@ img {
 }
 .comand-soc-link:hover .comand-soc-icon,
 .comand-soc-link:focus .comand-soc-icon {
-    fill:#AFB1B8;
+    /* fill:#AFB1B8; */
 }
 
 .comand-soc-icon {
     fill: #FFFFFF;
 }
+
+
+/* ------------------------------Clients------------------------------ */
+.title-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
     
+    color: var(--primary-text-color)
+}
+
+
+.list-clients {
+    display: flex;
+}
+
+.list-item {
+   margin-right: 30px;
+}
+
+.clients-link {
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--clients-primary-color);
+}
+
+.clients-link:hover, .clients-icon:focus,
+.clients-icon:hover, .clients-icon:focus {
+    fill: #2196F3;
+    border-color: #2196F3;
+}
+
+.clients-icon {
+    fill: var(--clients-primary-color);
+}
+
     
 
 /* ------------------------------Work------------------------------ */
@@ -571,4 +614,48 @@ img {
 .link-address:hover, 
 .link-address:focus {
     color: #2196F3;
+}
+
+.block-addres {
+    margin-right: 70px;
+}
+
+/* ------------------------------Foot-join------------------------------ */
+
+.foot-join {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.title-join {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.soc-list {
+    display:inline-flex;
+    margin-bottom: 30px;
+    
+}
+
+.soc-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
 }
