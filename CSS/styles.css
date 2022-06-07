@@ -276,9 +276,7 @@ img {
 
 /* ------------------------------About------------------------------ */
 
-.about-title {
-    
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -401,28 +399,32 @@ img {
 }
 
 .comand-soc-link {
+
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #AFB1B8;
     display:flex;
     align-items: center;
     justify-content: center;
-    
+    color: #AFB1B8;
+    background-color: #FFFFFF
     
 }
 
 .comand-soc-link:hover, .comand-soc-link:focus {
     background-color: #2196F3;
-    fill: #AFB1B8;
+    
 }
 .comand-soc-link:hover .comand-soc-icon,
 .comand-soc-link:focus .comand-soc-icon {
-    /* fill:#AFB1B8; */
+    fill:#FFFFFF
 }
 
-.comand-soc-icon {
+/* .comand-soc-icon:hover, .comand-soc-icon:focus {
     fill: #FFFFFF;
+} */
+.comand-soc-icon {
+    fill: #AFB1B8;
 }
 
 
@@ -621,11 +623,13 @@ img {
 }
 
 /* ------------------------------Foot-join------------------------------ */
-
+.footer> .container {
+    display: flex;
+    align-items: baseline;
+}
 .foot-join {
     margin-right: auto;
-    display: flex;
-    justify-content: center;
+  
 }
 
 .title-join {
@@ -637,19 +641,23 @@ img {
     color: #FFFFFF;
 }
 
-.soc-list {
+.foot-soc-list{
     display:inline-flex;
     margin-bottom: 30px;
     
 }
 
-.soc-item {
+.foot-soc-item {
     width: 44px;
     height: 44px;
     margin-right: 10px;
+   
+}
+.foot-soc-icon {
+    fill: #FFFFFF;
 }
 
-.soc-link {
+.foot-soc-link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -657,9 +665,9 @@ img {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
-.soc-link:hover,
-.soc-link:focus {
+.foot-soc-link:hover,
+.foot-soc-link:focus {
     background-color: #2196F3;
 }
