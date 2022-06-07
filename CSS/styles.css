@@ -659,3 +659,7 @@ img {
     background: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
 }
+.soc-link:hover,
+.soc-link:focus {
+    background-color: #2196F3;
+}
