@@ -184,7 +184,8 @@ img {
 
 /* ------------------------------Hero------------------------------ */
 .hero {
-
+    max-width: 1600px;
+    margin: 0 auto;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -196,8 +197,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    
 }
 
 
@@ -292,16 +291,19 @@ img {
     overflow: hidden;
 }
 .abaut-list {
+    
     margin: 0;
     display: flex;
     list-style: none;
 }
-
+.icons:not(:last-child) {
+    margin-right: 30px;
+}
 .icons {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
+    
     justify-content: center;
     display:inline-flex;
     align-items: center;
@@ -315,7 +317,7 @@ img {
 .about-title-next {
     display: inline-block;
     margin-bottom: 10px;
-    margin-left: 30px;
+    
     
     font-weight: 700;
     font-size: 14px;
@@ -326,7 +328,7 @@ img {
 
 .about-text {
     display: inline-block;
-    margin-left: 30px;
+    
     margin: bottom 10px;
    
     font-size: 14px;
@@ -377,7 +379,7 @@ img {
 }
  
 .comand-text {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     
     font-size: 16px;
     line-height: 1.19;
@@ -386,6 +388,7 @@ img {
 }
 
 .comand-soc-list {
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -394,7 +397,7 @@ img {
     width: 44px;
     height: 44px;
     margin-right: 10px;
-    margin-bottom: 30px;
+    
 }
 .comand-soc-item:last-child {
     margin-right: 0;
@@ -459,10 +462,18 @@ img {
     height: 92px;
     border-radius: 4px;
     border: 1px solid var(--clients-primary-color);
+    color: #AFB1B8;
+    background-color:#FFFFFF
+
 }
 
-.clients-link:hover, .clients-icon:focus,
-.clients-icon:hover, .clients-icon:focus {
+
+.clients-link:hover, .clients-link:focus {
+    background-color: #FFFFFF
+    
+}
+.clients-link:hover, .clients-icon:hover,
+.clients-link:focus, .clients-icon:focus {
     fill: #2196F3;
     border-color: #2196F3;
 }
@@ -481,7 +492,7 @@ img {
     margin-top: 30px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .work-list {
@@ -520,8 +531,11 @@ img {
 }
 
 .work-link {
-    
+    display: block;
     text-decoration: none;
+}
+.work-link:hover, .work-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -542,6 +556,7 @@ img {
 }
 
 .future-list {
+    margin-left: -30px;
     display: flex;
     justify-content: space-between;
     
